@@ -66,7 +66,12 @@ const userSchema = new mongoose.Schema({
     type: String, // Total experience in years
     default: "0",
   },
-  interests: [String], // Array of strings to list interests
+  interests: [
+    {
+      icon: String,
+      label: String,
+    }
+  ], // Array of strings to list interests
   specializations: [
     {
       icon: String,
