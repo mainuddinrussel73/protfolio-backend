@@ -84,19 +84,19 @@ const userSchema = new mongoose.Schema({
       clientName: String,
       review: String,
       rating: Number, // Rating out of 5
-      completionDate: Date,
-      coursetopics : String,
-      description : String,
-      certificateLink : String,
-      imageUrl : String
+      image: String,
+      date : Date
     }
   ],
   cources: [
     {
       title: String,
       organization: String,
-      date: Date,
-      description: String,
+      coursetopics : String,
+      completionDate: Date,
+      description : String,
+      certificateLink : String,
+      imageUrl : String
     }
   ],
   socialMediaLinks: {
