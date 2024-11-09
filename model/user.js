@@ -88,7 +88,7 @@ const userSchema = new mongoose.Schema({
       date : Date
     }
   ],
-  cources: [
+  courses: [
     {
       title: String,
       organization: String,
