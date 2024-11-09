@@ -84,7 +84,19 @@ const userSchema = new mongoose.Schema({
       clientName: String,
       review: String,
       rating: Number, // Rating out of 5
+      completionDate: Date,
+      coursetopics : String,
+      description : String,
+      certificateLink : String,
+      imageUrl : String
+    }
+  ],
+  cources: [
+    {
+      title: String,
+      organization: String,
       date: Date,
+      description: String,
     }
   ],
   socialMediaLinks: {
@@ -96,6 +108,14 @@ const userSchema = new mongoose.Schema({
   },
   cvDriveLink: {
     type: String,
+  },
+  details : {
+    type: String,
+    required: true,
+  },
+  intro : {
+    type: String,
+    required: true,
   },
   createdAt: {
     type: Date,
